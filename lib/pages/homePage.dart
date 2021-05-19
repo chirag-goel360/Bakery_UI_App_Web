@@ -322,12 +322,14 @@ class HomePage extends StatelessWidget {
                             left: 0,
                             right: 0,
                             child: Center(
-                              child: RaisedButton(
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  primary: kGoldenColor,
+                                ),
                                 onPressed: () {},
                                 child: Text(
                                   'Learn More...',
                                 ),
-                                color: kGoldenColor,
                               ),
                             ),
                           ),
@@ -575,12 +577,14 @@ class FooterSubscribeWidget extends StatelessWidget {
                   color: kBlackColor,
                   fontWeight: FontWeight.bold,
                 ),
-                suffixIcon: FlatButton(
+                suffixIcon: TextButton(
+                  style: TextButton.styleFrom(
+                    onSurface: kGoldenColor,
+                  ),
                   onPressed: () {},
                   child: Text(
                     'Subscribe',
                   ),
-                  color: kGoldenColor,
                 ),
               ),
             ),

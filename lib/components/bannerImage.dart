@@ -1,6 +1,8 @@
 import 'package:bakery_ui/global.dart';
 import 'package:flutter/material.dart';
 
+import '../global.dart';
+
 class BannerImage extends StatelessWidget {
   final bannerImageData;
 
@@ -52,12 +54,14 @@ class BannerImage extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            RaisedButton(
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: kGoldenColor,
+              ),
               onPressed: () {},
               child: Text(
                 'Order Now',
               ),
-              color: kGoldenColor,
             ),
           ],
         ),
